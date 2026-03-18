@@ -1,8 +1,0 @@
-README.md
-pyproject.toml
-consumer_behavior_project/__init__.py
-consumer_behavior_project/__main__.py
-consumer_behavior_project.egg-info/PKG-INFO
-consumer_behavior_project.egg-info/SOURCES.txt
-consumer_behavior_project.egg-info/dependency_links.txt
-consumer_behavior_project.egg-info/top_level.txt
