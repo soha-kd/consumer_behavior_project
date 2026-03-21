@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from consumer_behavior_project.preprocessing import load_data, preprocess_data
 from consumer_behavior_project.model import (
     train_logistic_regression,
@@ -19,7 +21,9 @@ from consumer_behavior_project.evaluation import (
 
 
 def main():
-    df = load_data("data/online vs store shopping dataset.csv")
+    data_path = Path("data") / "online vs store shopping dataset.csv"
+    df = load_data(data_path)
+
     X_train, X_test, y_train, y_test, label_encoder = preprocess_data(df)
 
     # Logistic Regression
@@ -51,10 +55,22 @@ def main():
 
     # Comparison table
     results = build_results_table(
-        log_results["accuracy"], log_results["f1_score"],
-        smote_results["accuracy"], smote_results["f1_score"],
-        svm_results["accuracy"], svm_results["f1_score"],
-        rf_results["accuracy"], rf_results["f1_score"],
+        log_results["accuracy"],
+        log_results["f1_weighted"],
+        smote_results["accuracy"],
+        smote_results["f1_weighted"],
+        svm_results["accuracy"],
+        svm_results["f1_weighted"],
+        rf_results["accuracy"],
+        rf_results["f1_weighted"],
+        log_results["f1_macro"],
+        smote_results["f1_macro"],
+        svm_results["f1_macro"],
+        rf_results["f1_macro"],
+        log_results["balanced_accuracy"],
+        smote_results["balanced_accuracy"],
+        svm_results["balanced_accuracy"],
+        rf_results["balanced_accuracy"],
     )
 
     print("\n=== Model Comparison ===")
