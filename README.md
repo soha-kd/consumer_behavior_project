@@ -14,6 +14,17 @@ Four different approaches were evaluated:
 
 The results demonstrate that handling class imbalance significantly improves performance, particularly for minority classes.
 
+---
+
+## Installation & Setup
+
+```bash
+pip install -e .
+pip install -r requirements.txt
+python -m consumer_behavior_project
+```
+
+
 ## Methodology
 
 ### Data Exploration
@@ -69,6 +80,14 @@ Additional visualizations:
 - Confusion matrices
 - ROC curves
 - Precision-Recall curves
+
+---
+
+### 📊 Visualization
+
+- Plots are displayed inline in the notebook for easy analysis.
+- All generated plots are also automatically saved in: outputs/plots/
+
 
 ---
 
