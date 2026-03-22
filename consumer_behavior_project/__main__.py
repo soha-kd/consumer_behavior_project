@@ -6,11 +6,11 @@ from consumer_behavior_project.model import (
     train_svm,
     train_random_forest,
     train_logistic_regression_smote,
+)
+from consumer_behavior_project.evaluation import (
     evaluate_model,
     print_results,
     build_results_table,
-)
-from consumer_behavior_project.evaluation import (
     plot_confusion_matrix,
     get_feature_importance_dataframe,
     plot_feature_importance,
