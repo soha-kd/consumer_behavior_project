@@ -8,6 +8,15 @@ version = "0.1.0"
 description = "Multiclass classification project for consumer behavior"
 readme = "README.md"
 requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "imbalanced-learn",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+]
 
 [tool.setuptools]
 packages = ["consumer_behavior_project"]
