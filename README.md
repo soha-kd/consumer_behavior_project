@@ -19,9 +19,14 @@ The results demonstrate that handling class imbalance significantly improves per
 ## Installation & Setup
 
 ```bash
-pip install -e .
+git clone <repo-url>
+cd <repo-folder>
+python -m venv test_env
+test_env\Scripts\activate
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 python -m consumer_behavior_project
+
 ```
 
 
