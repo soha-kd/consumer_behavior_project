@@ -1,3 +1,10 @@
+"""
+This file contains functions for evaluating classification models, printing
+performance results, building model comparison tables, and generating plots
+such as confusion matrices, feature importance charts, ROC curves, and
+precision-recall curves.
+
+"""
 import matplotlib
 matplotlib.use("Agg")
 import pandas as pd

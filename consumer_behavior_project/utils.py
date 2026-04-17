@@ -1,3 +1,7 @@
+"""
+Utility module containing helper functions that are reused across multiple files
+in the project.
+"""
 import time
 import os
 import matplotlib.pyplot as plt

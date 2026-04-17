@@ -1,3 +1,12 @@
+"""
+    Steps:
+    - Validates input data
+    - Removes duplicate rows
+    - Splits data into training and testing sets (with stratification)
+    - Encodes target labels
+    - Applies one-hot encoding to categorical features
+    - Scales numerical features using StandardScaler
+"""
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler

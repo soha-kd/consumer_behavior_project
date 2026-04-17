@@ -38,6 +38,45 @@ python3 -m pip install --upgrade pip
 pip install .
 python3 -m consumer_behavior_project
 ```
+
+## Project Structure
+
+```id="k3f9qs"
+consumer_behavior_project/
+│── consumer_behavior_project/
+│   │── __init__.py          # Package initialization
+│   │── __main__.py          # Entry point to run the project
+│   │── model.py             # Model training logic
+│   │── preprocessing.py     # Data preprocessing pipeline
+│   │── evaluation.py        # Model evaluation (metrics, plots)
+│   │── utils.py             # Helper functions
+│
+│── data/                    # Dataset used for training and testing
+│
+│── notebooks/
+│   │── exploration.ipynb    # Exploratory Data Analysis (EDA) with inline visualizations
+│   │── modeling_steps.ipynb # Step-by-step modeling process and results visualization
+│
+│── outputs/
+│   │── plots/               # Saved plots (confusion matrix, ROC, etc.)
+│
+│── pyproject.toml           # Project configuration and dependencies
+│── README.md                # Project documentation
+```
+
+### Notebooks
+
+* **exploration.ipynb**: Focuses on data exploration and understanding feature distributions, correlations, and class imbalance.
+* **modeling_steps.ipynb**: Demonstrates the full modeling workflow, including preprocessing, training, and evaluation, with inline results and visualizations.
+
+
+### Notebooks
+
+* **exploration.ipynb**: Focuses on data exploration and understanding feature distributions, correlations, and class imbalance.
+* **modeling_steps.ipynb**: Demonstrates the full modeling workflow, including preprocessing, training, and evaluation, with inline results and visualizations.
+
+```
+
 ## Methodology
 
 ### Data Exploration

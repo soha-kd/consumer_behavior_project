@@ -1,3 +1,8 @@
+"""
+This file contains functions for training different machine learning models
+(Logistic Regression, SVM, Random Forest) and handling class imbalance using SMOTE.
+
+"""
 import pandas as pd
 from imblearn.over_sampling import SMOTE
 from sklearn.ensemble import RandomForestClassifier
