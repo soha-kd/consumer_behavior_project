@@ -9,13 +9,16 @@ description = "Multiclass classification project for consumer behavior"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "pandas",
-    "numpy",
-    "scikit-learn",
     "imbalanced-learn",
     "matplotlib",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy",
     "seaborn",
-    "jupyter",
+    "PyQt5 ; sys_platform == 'darwin'",
+    "PyQt5 ; sys_platform == 'linux'",
+    "PySide6 ; sys_platform == 'win32'",
 ]
 
 [tool.setuptools]
