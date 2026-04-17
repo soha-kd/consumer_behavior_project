@@ -17,19 +17,27 @@ The results demonstrate that handling class imbalance significantly improves per
 ---
 
 ## Installation & Setup
-
+🪟Windows:
 ```bash
 git clone https://github.com/soha-kd/consumer_behavior_project.git
 cd consumer_behavior_project
 python -m venv test_env
 test_env\Scripts\activate
 python -m pip install --upgrade pip
-pip install -r requirements.txt
+pip install .
 python -m consumer_behavior_project
 
 ```
-
-
+🐧Linux/🍏MacOS:
+```bash
+git clone https://github.com/soha-kd/consumer_behavior_project.git
+cd consumer_behavior_project
+python3 -m venv test_env
+source test_env/bin/activate
+python3 -m pip install --upgrade pip
+pip install .
+python3 -m consumer_behavior_project
+```
 ## Methodology
 
 ### Data Exploration

@@ -19,7 +19,7 @@ def save_plot(filename, folder="outputs/plots", show=True):
     plt.savefig(filepath, bbox_inches="tight")
     print(f"Saved plot: {filepath}")
 
-    if show:
-        plt.show()
+    #if show:
+      #  plt.show()
 
     plt.close("all")  
